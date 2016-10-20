@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -39,6 +40,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Prueba Abraham View Controller-->
+        <scene sceneID="Qsg-yc-3QM">
+            <objects>
+                <viewController storyboardIdentifier="AbrahamPrueba" id="lOW-wW-Smk" customClass="PruebaAbrahamViewController" customModule="HackatonTraining" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uQo-8v-aNp"/>
+                        <viewControllerLayoutGuide type="bottom" id="bhc-jK-eyd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7dI-EY-6hl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Rn2-WE-zP2">
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ewD-Ob-5ew">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Tmd-CH-FNc"/>
+                                            <constraint firstAttribute="width" constant="343" id="VHo-0y-97X"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qM9-8F-seD">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="343" id="EK1-Jg-Tps"/>
+                                            <constraint firstAttribute="height" constant="30" id="O2Z-Pm-Bc5"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKI-f2-AnU">
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="190" id="eRr-ar-KCq"/>
+                                </constraints>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="login:" destination="lOW-wW-Smk" eventType="touchUpInside" id="gME-fW-sW8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rn2-WE-zP2" firstAttribute="trailing" secondItem="7dI-EY-6hl" secondAttribute="trailingMargin" id="4L3-3I-QaZ"/>
+                            <constraint firstItem="Rn2-WE-zP2" firstAttribute="top" secondItem="uQo-8v-aNp" secondAttribute="bottom" constant="126" id="5N4-0Z-MOh"/>
+                            <constraint firstItem="BKI-f2-AnU" firstAttribute="top" secondItem="qM9-8F-seD" secondAttribute="bottom" constant="17" id="KXp-K2-0Ov"/>
+                            <constraint firstItem="Rn2-WE-zP2" firstAttribute="leading" secondItem="7dI-EY-6hl" secondAttribute="leadingMargin" id="ms0-1G-Qtg"/>
+                            <constraint firstItem="BKI-f2-AnU" firstAttribute="centerX" secondItem="7dI-EY-6hl" secondAttribute="centerX" id="yTh-8p-Wmg"/>
+                            <constraint firstItem="Rn2-WE-zP2" firstAttribute="centerX" secondItem="7dI-EY-6hl" secondAttribute="centerX" id="yjx-8p-jTT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="txtEmail" destination="ewD-Ob-5ew" id="T7i-0O-puQ"/>
+                        <outlet property="txtPassword" destination="qM9-8F-seD" id="M1P-Y1-nWr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aGX-cu-QjW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="831.63418290854577"/>
         </scene>
     </scenes>
 </document>
