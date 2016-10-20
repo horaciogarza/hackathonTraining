@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		477420E11DB8522900ED88ED /* HoracioStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 477420E01DB8522900ED88ED /* HoracioStoryboard.storyboard */; };
 		8E043DC51DB1946B00968C57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E043DC41DB1946B00968C57 /* AppDelegate.swift */; };
 		8E043DC71DB1946B00968C57 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E043DC61DB1946B00968C57 /* ViewController.swift */; };
 		8E043DCA1DB1946B00968C57 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E043DC81DB1946B00968C57 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		477420E01DB8522900ED88ED /* HoracioStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = HoracioStoryboard.storyboard; path = ../HoracioStoryboard.storyboard; sourceTree = "<group>"; };
 		8E043DC11DB1946B00968C57 /* HackatonTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackatonTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E043DC41DB1946B00968C57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E043DC61DB1946B00968C57 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		477420E21DB8537A00ED88ED /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8E043DC81DB1946B00968C57 /* Main.storyboard */,
+				477420E01DB8522900ED88ED /* HoracioStoryboard.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		8E043DB81DB1946B00968C57 = {
 			isa = PBXGroup;
 			children = (
@@ -56,7 +67,7 @@
 			children = (
 				8E043DC41DB1946B00968C57 /* AppDelegate.swift */,
 				8E043DC61DB1946B00968C57 /* ViewController.swift */,
-				8E043DC81DB1946B00968C57 /* Main.storyboard */,
+				477420E21DB8537A00ED88ED /* Storyboards */,
 				8E043DCB1DB1946B00968C57 /* Assets.xcassets */,
 				8E043DCD1DB1946B00968C57 /* LaunchScreen.storyboard */,
 				8E043DD01DB1946B00968C57 /* Info.plist */,
@@ -125,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E043DCF1DB1946B00968C57 /* LaunchScreen.storyboard in Resources */,
+				477420E11DB8522900ED88ED /* HoracioStoryboard.storyboard in Resources */,
 				8E043DCC1DB1946B00968C57 /* Assets.xcassets in Resources */,
 				8E043DCA1DB1946B00968C57 /* Main.storyboard in Resources */,
 			);
